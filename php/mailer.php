@@ -6,11 +6,13 @@ if(isset($_POST['submit'])){
     $phone = $_POST['phone'];
     $message = $_POST['message'];
     $subject = "Web Contact";
+    
     $content = "Name: " . $name . "\nPhone: " . $phone . "\nMessage:" . $message;
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
     mail($to,$subject,$content,$headers);
-    header('Location: ../thanks.html');
-    }
+    
+    header("Location: ../thanks.html");
+}
 ?>
