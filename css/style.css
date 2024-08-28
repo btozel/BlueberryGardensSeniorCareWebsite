@@ -834,6 +834,10 @@ a:focus {
   background-image: url(../images/envelope-white.png);
 }
 
+.info_items .item .img-box.box-4 {
+  background-image: url(../images/whatsapp_logo_green.png);
+}
+
 /* footer section*/
 .footer_section {
   background-color: #fbfdfd;
