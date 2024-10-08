@@ -63,96 +63,43 @@
 
 
       <style>
-        @import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
-
         body {
-          font-family: "Inconsolata", monospace;
           margin: 0;
-        }
-
-        button {
-          cursor: pointer;
         }
 
         #portfolio {
           width: 100%;
-          background: #ffffff;
           position: relative;
+          align-content: center;
           display: grid;
-          grid-template-columns: repeat(3, minmax(200px, 1fr));
+          grid-template-columns: repeat(3, minmax(150px, 1fr));
           grid-template-rows: 1fr 1fr;
-          grid-gap: 2px;
+          grid-gap: 20px;
         }
 
         .project {
           position: relative;
-          height: 300px;
-          background: #F2DAD7;
+          height: 400px;
+          max-width: 400px;
+          background: #26233e;
           overflow: hidden;
         }
 
         .project img {
           position: absolute;
           opacity: 0.9;
+          max-height: 100%;
         }
 
         .project p {
           position: absolute;
           text-align: center;
+          text-shadow: 0 0 2px #cdcdcd, 0 0 2px #26233e;
+          font-weight: bold;
           width: 100%;
           padding: 1em 0;
-          text-transform: uppercase;
           letter-spacing: 2px;
           z-index: 3;
-        }
-
-        .project .grid__title {
-          position: absolute;
-          width: 100%;
-          text-align: center;
-          white-space: nowrap;
-          bottom: 0;
-          font-weight: 100;
-          font-size: 0.8em;
-          z-index: 3;
-          text-transform: uppercase;
-          color: #474545;
-          letter-spacing: 2px;
-        }
-
-        .project:hover .grid__overlay {
-          transform: translateY(0%);
-        }
-
-        .grid__overlay {
-          background: rgba(229, 182, 177, 0.9);
-          height: 100%;
-          grid-column: 1/-1;
-          grid-row: 1/-1;
-          position: relative;
-          display: grid;
-          justify-items: center;
-          align-items: center;
-          transform: translateY(101%);
-          transition: all 0.3s ease-in-out;
-        }
-
-        .grid__overlay button {
-          background: none;
-          outline: none;
-          font-weight: 100;
-          letter-spacing: 2px;
-          border: 1px solid #ffffff;
-          color: #ffffff;
-          text-transform: uppercase;
-          padding: 10px;
-        }
-
-        .grid__overlay button:hover {
-          transition: all 0.3s ease-in-out;
-          background: #ffffff;
-          color: #D1A39E;
-          transform: scale(1.05);
         }
 
         .overlay {
@@ -174,35 +121,15 @@
 
         .overlay__inner {
           background: #ffffff;
-
           padding: 20px;
           position: relative;
           opacity: 1;
         }
 
-        .close {
-          position: absolute;
-          top: 3px;
-          right: 10px;
-          background: none;
-          outline: 0;
-          color: #474545;
-          border: 0;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-        }
-
-        .close:hover {
-          color: #D1A39E;
-        }
-
         .project__image {
-          margin-left: -50%;
+          margin-left: 0%;
         }
       </style>
-
-
-
 
     </header>
     <!-- end header section -->
@@ -219,118 +146,50 @@
         </h2>
       </div>
 
-
       <section id="portfolio">
 
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=700&q=80" />
-          <p>websites</p>
+          <img class="project__image" src="gallery/9.jpg" />
+          <p>Ready for Picking</p>
         </div>
-
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1521104955835-ba91c70d6443?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38cdeda7d073c4b6d47a5776f184cba9&auto=format&fit=crop&w=700&q=80" />
-          <p>pure css</p>
+          <img class="project__image" src="gallery/8.jpg" />
+          <p>Daily Watering</p>
         </div>
-
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=700&q=80" />
-          <p>web apps</p>
+          <img class="project__image" src="gallery/7.jpg" />
+          <p>Not Yet</p>
         </div>
-
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd4d735954f33290fbf984e4eb7abe32&auto=format&fit=crop&w=700&q=80" />
-          <p>daily ui</p>
+          <img class="project__image" src="gallery/6.jpg" />
+          <p>Shrimp for Dinner</p>
         </div>
-
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c5008952226f48ed4bf5d3ea64ff545&auto=format&fit=crop&w=700&q=80" />
-          <p>websites</p>
+          <img class="project__image" src="gallery/5.jpg" />
+          <p>Watercolors</p>
         </div>
-
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-0.3.5&s=a4b3dc4bee43da458f6aa5c05be6bfc4&auto=format&fit=crop&w=700&q=80" />
-          <p>pure css</p>
+          <img class="project__image" src="gallery/4.jpg" />
+          <p>Fall Banquet</p>
         </div>
-
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1481762554390-ff5562748bdf?ixlib=rb-0.3.5&s=1b7f850b7f8f702e237b0f81c0ec0bf5&auto=format&fit=crop&w=700&q=80" />
-          <p>web apps</p>
+          <img class="project__image" src="gallery/3.jpg" />
+          <p>Vegetables & Fruits</p>
         </div>
-
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
-          <p>daily ui</p>
+          <img class="project__image" src="gallery/2.jpg" />
+          <p>Watering Berries</p>
         </div>
-
         <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=700&q=80" />
-          <p>web apps</p>
+          <img class="project__image" src="gallery/1.jpg" />
+          <p>Playing the Piano</p>
         </div>
-
-        <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd4d735954f33290fbf984e4eb7abe32&auto=format&fit=crop&w=700&q=80" />
-          <p>daily ui</p>
-        </div>
-
-        <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c5008952226f48ed4bf5d3ea64ff545&auto=format&fit=crop&w=700&q=80" />
-          <p>websites</p>
-        </div>
-
-        <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-0.3.5&s=a4b3dc4bee43da458f6aa5c05be6bfc4&auto=format&fit=crop&w=700&q=80" />
-          <p>pure css</p>
-        </div>
-
-        <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
-          <p>daily ui</p>
-        </div>
-
-        <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=700&q=80" />
-          <p>web apps</p>
-        </div>
-
-        <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd4d735954f33290fbf984e4eb7abe32&auto=format&fit=crop&w=700&q=80" />
-          <p>daily ui</p>
-        </div>
-
-        <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c5008952226f48ed4bf5d3ea64ff545&auto=format&fit=crop&w=700&q=80" />
-          <p>websites</p>
-        </div>
-
-        <div class="project">
-          <img class="project__image"
-            src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-0.3.5&s=a4b3dc4bee43da458f6aa5c05be6bfc4&auto=format&fit=crop&w=700&q=80" />
-          <p>pure css</p>
-        </div>
-
 
       </section>
 
-
       <div class="overlay">
         <div class="overlay__inner">
-          <img>
+          <img />
         </div>
       </div>
   </section>
@@ -352,7 +211,6 @@
 
     buttons.forEach(button => button.addEventListener('click', open));
     overlay.addEventListener('click', close);
-    //# sourceURL=pen.js
   </script>
 
   </section>
@@ -363,19 +221,35 @@
 
   <section class="info_section layout_padding2">
     <div class="container">
+
       <div class="info_items">
-        <a href="tel:(425) 374-9322">
+
+        <a href="tel:(206) 898-6637">
           <div class="item ">
             <div class="img-box box-2">
               <img src="" alt="">
             </div>
             <div class="detail-box">
               <p>
-                (425) 374-9322
+                (206) 898-6637
               </p>
             </div>
           </div>
         </a>
+        
+        <a href="https://www.facebook.com/people/Blueberry-Gardens-Adult-Family-Homes/61559644282199/">
+          <div class="item ">
+            <div class="img-box box-5">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Facebook Page
+              </p>
+            </div>
+          </div>
+        </a>        
+
         <a href="https://wa.me/14253749322">
           <div class="item ">
             <div class="img-box box-4">
@@ -388,6 +262,7 @@
             </div>
           </div>
         </a>
+
         <a href="mailto:care@blueberryseniorcare.com">
           <div class="item ">
             <div class="img-box box-3">
@@ -400,6 +275,7 @@
             </div>
           </div>
         </a>
+
       </div>
     </div>
   </section>

@@ -780,7 +780,7 @@ a:focus {
 }
 
 .info_items {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,6 +840,10 @@ a:focus {
 
 .info_items .item .img-box.box-4 {
   background-image: url(../images/whatsapp_logo_green.png);
+}
+
+.info_items .item .img-box.box-5 {
+  background-image: url(../images/logo_facebook.png);
 }
 
 /* footer section*/
