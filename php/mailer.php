@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $message = $_POST['message'];
     $subject = "Web Contact";
     
-    $content = "Name: " . $name . "\nPhone: " . $phone . "\nMessage:" . $message;
+    $content = "Name: " . $name . "\nPhone: " . $phone . "\nEmail: " . $from ."\nMessage:" . $message;
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
