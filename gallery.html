@@ -155,7 +155,7 @@
       -->
 
       <section id="portfolio">
-
+        <!--
         <div class="project">
           <img class="project__image" src="gallery/15.jpg" />
           <p>Caring for Plants</p>
@@ -164,60 +164,22 @@
           <img class="project__image" src="gallery/14.jpg" />
           <p>Some Live Music</p>
         </div>
-        <div class="project">
-          <img class="project__image" src="gallery/13.jpg" />
-          <p>Happy Birthday</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/12.jpg" />
-          <p>Games & Exercise</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/11.jpg" />
-          <p>Bookclub</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/10.jpg" />
-          <p>Blueberries!</p>
-        </div>                                        
-        <div class="project">
-          <img class="project__image" src="gallery/9.jpg" />
-          <p>Ready for Picking</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/8.jpg" />
-          <p>Daily Watering</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/7.jpg" />
-          <p>Not Yet</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/6.jpg" />
-          <p>Shrimp for Dinner</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/5.jpg" />
-          <p>Watercolors</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/4.jpg" />
-          <p>Fall Banquet</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/3.jpg" />
-          <p>Vegetables & Fruits</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/2.jpg" />
-          <p>Watering Berries</p>
-        </div>
-        <div class="project">
-          <img class="project__image" src="gallery/1.jpg" />
-          <p>Playing the Piano</p>
-        </div>
-
+      -->
       </section>
+
+      <script>
+        for (i = 30; i >= 1; i--){
+         var imgElement = document.createElement('img');
+         imgElement.setAttribute('class', 'project__image');
+         imgElement.setAttribute('src', `gallery/${i}.jpg`);
+         
+         var divElement = document.createElement('div');
+         divElement.setAttribute('class', 'project');
+         
+         divElement.appendChild(imgElement);
+         document.getElementById("portfolio").appendChild(divElement);
+       }
+     </script>
 
       <div class="overlay">
         <div class="overlay__inner">
